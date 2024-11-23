@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+cryptography
+sentence-transformers
+faiss-cpu
+numpy
+pandas
+scikit-learn
+mlflow
+torch
+streamlit
+requests

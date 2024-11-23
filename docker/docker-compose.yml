@@ -1,0 +1,12 @@
+# docker-compose.yml
+version: '3.11'
+services:
+  medical_ai_app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ENCRYPTION_KEY=your-default-encryption-key
+      - DATABASE_URL=sqlite:///./mlflow.db
+    volumes:
+      - ./mlflow.db:/app/mlflow.db
